@@ -1,13 +1,7 @@
-const tableurs = [];
-const tableur = [];
-let multiplicateur = 0;
-
-for (i = 0; i <= 10; i++) {
-    for (x = 0; x <= i; x++) {
-        tableur[i] = `${multiplicateur} x ${x} = ${multiplicateur * x}`;
-    }
-    multiplicateur = i;
-    tableurs[i] = tableur;
-}
-
-console.log(tableurs);
+for (i = 1; i <= 9; i++) {
+    let ligne = "";
+    for (x = 1; x <= 9; x++) {
+        ligne += (i * x) + " ";
+    };
+    console.log(ligne);
+};
